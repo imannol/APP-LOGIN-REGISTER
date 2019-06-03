@@ -1,0 +1,96 @@
+<ion-content>
+  <!-- LOGIN -->
+<div class="bg-login" *ngIf="login">
+  <!-- overlay -->
+<div class="overlay">
+  <!-- logincontainer -->
+<div>
+
+
+<!-- logo -->
+<div class=" center padding-top-20-porcent">
+<img src="assets/icon/u.png">
+</div>
+
+  <!-- textos -->
+<div class="mg-top-30">
+  <!-- titulo -->
+<h5 class="snow center bold no-margin move color">Bienvenido a mi App</h5>
+<!-- subtitulo -->
+<p class="snow center light no-margin move color">Entre con su cuenta para continuar</p>
+</div>
+<!-- form CTALOGIN -->
+<div class="padding-40">
+  <ion-item class="bg-transparent no-padding">
+    <ion-label stacked class="snow bold"> Correo electrónico: </ion-label>
+    <ion-input  placeholder="example@gmail.com" type="email"></ion-input>
+  </ion-item>
+
+  <br>
+  <ion-item class="bg-transparent no-padding mg-top-20">
+      <ion-label stacked class="snow bold"> Contraseña: </ion-label>
+      <ion-input  type="password"></ion-input>
+    </ion-item>
+
+    <div class="ctaLogin center bold mg-top-30">
+        Entrar
+       </div>
+       <!-- nueva cuenta -->
+       <div class="txtRegister bold mg-top-20 center">
+         Crea una cuenta nueva
+       </div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+<!-- REGISTER -->
+<div class="bg-register" *ngIf="register">
+    <!-- overlay -->
+  <div class="overlay">
+    <!-- register container -->
+  <div>
+  
+  
+  <!-- logo -->
+  <div class=" center padding-top-20-porcent">
+  <img src="assets/icon/u.png">
+  </div>
+  
+    <!-- textos -->
+  <div class="mg-top-30">
+    <!-- titulo -->
+  <h5 class="snow center bold no-margin move color">Vamos alla</h5>
+  <!-- subtitulo -->
+  <p class="snow center light no-margin move color">Ingrese sus credenciales </p>
+  </div>
+  <!-- form CTALOGIN -->
+  <div class="padding-40">
+    <ion-item class="bg-transparent no-padding">
+      <ion-label stacked class="snow bold"> Ingrese su email: </ion-label>
+      <ion-input  placeholder="example@gmail.com" type="email"></ion-input>
+    </ion-item>
+  
+    <br>
+    <ion-item class="bg-transparent no-padding mg-top-20">
+        <ion-label stacked class="snow bold"> Ingrese su Contraseña: </ion-label>
+        <ion-input  type="password"></ion-input>
+      </ion-item>
+  
+      <div class="ctaRegister center bold mg-top-30">
+          Registrate
+         </div>
+         <!-- nueva cuenta -->
+         <div class="txtRegister bold mg-top-20 center" (click)="exibirLogin">
+           Ya tengo una cuenta
+         </div>
+  </div>
+  
+  </div>
+  </div>
+  </div>
+
+
+  </ion-content>

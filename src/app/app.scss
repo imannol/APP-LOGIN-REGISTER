@@ -1,0 +1,35 @@
+//COLOR 
+@import url('https://fonts.googleapis.com/css?family=Monserrat:300,300i,400,700');
+
+//GlobL
+* {
+    font-family: 'Monserrat', sans-serif; 
+}
+
+
+
+$purple: #702C91;
+$orange: #FDB813;
+$dark:   #4B4237;
+$snow: #FAFAFA;
+$gray:    #BFBBBA;
+
+.purple{
+    color: $purple;
+}
+
+.orange{
+    color: $orange;
+}
+
+.dark{
+   color: $dark;
+}
+
+.snow{
+    color: $snow;
+}
+
+.gray{
+    color: $gray;
+}
